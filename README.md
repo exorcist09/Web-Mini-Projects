@@ -1,2 +1,2 @@
 # Web-Mini-Projects
-Web-Based Mini Projects
+### Mini Projects made with HTML/CSS/SASS/TAILWIND/BOOTSTRAP/JS
