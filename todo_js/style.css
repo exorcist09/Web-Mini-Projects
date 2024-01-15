@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Nunito&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    /* position: fixed; */
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:bisque;
+    color:black;
+}
+.left{
+    background-color: white;
+    padding:50px;
+    margin-top: 30px;
+    /* top:30px; */
+    border-radius: 20px;
+}
+.left .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left .top h1{
+    margin-left:30px;
+}
+.left .top img{
+    border-radius: 50%;
+    height:3%;
+}
+.left .bottom{
+    margin-top:40px;
+    align-items: center;
+}
+.left .bottom h3{
+    margin-top:20px;
+    text-align: center;
+}
+.left .bottom .categoryimg{
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+}
+.left .bottom pre{
+    margin-top:10px;
+    text-align:left;
+    padding:6px;
+}
+.right{
+    margin-top:50px;
+    margin-right:10%;
+
+}
+.container{
+    width:150%;
+    min-height:100vh;
+    /* background: black; */
+    /* padding:10px; */
+}
+
+.todo{
+    width:100%;
+    max-width:540px;
+    background: white;
+    margin:100px auto;
+    padding:40px;
+    border-radius: 20px;
+}
+
+.todo h2{
+    /* color:chocolate; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todo h2 img{
+    width:30px;
+    margin-left: 20px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly ;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom:25px ;
+}
+
+.row input{
+    flex:1;
+    border:none; 
+    outline:none;
+    background:#edeef0;
+    padding:10px;
+}
+.row button{
+    padding:16px 50px;
+    border:none; 
+    outline:none;
+    background:#036627;
+    color:#fff;
+    cursor: pointer;
+    font-size: large;
+    border-radius:40px ;
+
+}
+button img{
+    height:30px;
+    width:20px;
+    size: 30px;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+    align-items: center;
+} 
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding:12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content:" ";
+    position: absolute;
+    height:28px;
+    width:28px;
+    border-radius: 50%;
+    background-image:url("/unchecked.png") ;
+     background-size: cover;
+     background-position:center;
+     top:12px;
+     left:8px;
+}
+
+ul li.checked{
+    color:#555;
+    text-decoration: line-through;
+    
+
+}
+
+ul li.checked::before{
+    background-image: url("./checked.png ");
+}
+
+span{
+    position: absolute;
+    right:0;
+    top:5px;
+    width: 40px;
+    height:40px;
+    font-size: 22px;
+    color:#555;
+    line-height:40px;
+    text-align: center;
+}
+span:hover{
+    background: rgb(243, 41, 41);
+    border-radius: 50%;
+    color:black;
+    font-size: larger;
+}
